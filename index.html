@@ -1,23 +1,35 @@
-<div class="calculator">
-  <form>
-    <input type="text" name="result" placeholder="0" disabled>
-    <br>
-    <button type="button" value="C" onclick="clearResult()">C</button>
-    <button type="button" value="/" onclick="calculate('/')">/</button>
-    <button type="button" value="*" onclick="calculate('*')">*</button>
-    <button type="button" value="7" onclick="display('7')">7</button>
-    <button type="button" value="8" onclick="display('8')">8</button>
-    <button type="button" value="9" onclick="display('9')">9</button>
-    <button type="button" value="-" onclick="calculate('-')">-</button>
-    <button type="button" value="4" onclick="display('4')">4</button>
-    <button type="button" value="5" onclick="display('5')">5</button>
-    <button type="button" value="6" onclick="display('6')">6</button>
-    <button type="button" value="+" onclick="calculate('+')">+</button>
-    <button type="button" value="1" onclick="display('1')">1</button>
-    <button type="button" value="2" onclick="display('2')">2</button>
-    <button type="button" value="3" onclick="display('3')">3</button>
-    <button type="button" value="=" onclick="calculate('=')">=</button>
-    <button type="button" value="0" onclick="display('0')">0</button>
-    <button type="button" value="." onclick="display('.')">.</button>
-  </form>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>계산기</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="result">
+        <span id="output">0</span>
+      </div>
+      <div class="keys">
+        <button class="operator" id="add">+</button>
+        <button class="operator" id="subtract">-</button>
+        <button class="operator" id="multiply">*</button>
+        <button class="operator" id="divide">/</button>
+        <button id="decimal">.</button>
+        <button id="clear">C</button>
+        <button class="number" id="num-1">1</button>
+        <button class="number" id="num-2">2</button>
+        <button class="number" id="num-3">3</button>
+        <button class="number" id="num-4">4</button>
+        <button class="number" id="num-5">5</button>
+        <button class="number" id="num-6">6</button>
+        <button class="number" id="num-7">7</button>
+        <button class="number" id="num-8">8</button>
+        <button class="number" id="num-9">9</button>
+        <button class="number" id="num-0">0</button>
+        <button id="equals">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
