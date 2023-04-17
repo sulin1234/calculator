@@ -1,37 +1,102 @@
 .calculator {
-	margin: auto;
-	margin-top: 100px;
-	padding: 20px;
-	background-color: #f2f2f2;
-	width: 300px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px #999;
-}
-
-.display {
-	background-color: #fff;
-	border-radius: 5px;
-	margin-bottom: 10px;
-	padding: 5px;
-}
-
-.buttons {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 5px;
+  background-color: #FFFFE0;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #CCCCCC;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  text-align: center; /* 추가 */
 }
 
 button {
-	padding: 10px;
-	background-color: #4CAF50;
-	color: #fff;
-	border-radius: 5px;
-	border: none;
-	font-size: 20px;
-	cursor: pointer;
-	box-shadow: 0 0 5px #999;
+  background-color: #FFFFCC;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  color: #333333;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px;
+  width: 40px;
+  order: 1; /* 추가 */
 }
 
-button:hover {
-	background-color: #3e8e41;
+input {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-size: 24px;
+  margin: 5px;
+  padding: 10px;
+  text-align: right;
+  width: 170px;
+  order: 0; /* 추가 */
+}
+
+button[value="C"] {
+  order: 2; /* 추가 */
+}
+
+button[value="/"] {
+  order: 10; /* 추가 */
+}
+
+button[value="*"] {
+  order: 11; /* 추가 */
+}
+
+button[value="7"] {
+  order: 3; /* 추가 */
+}
+
+button[value="8"] {
+  order: 4; /* 추가 */
+}
+
+button[value="9"] {
+  order: 5; /* 추가 */
+}
+
+button[value="-"] {
+  order: 12; /* 추가 */
+}
+
+button[value="4"] {
+  order: 6; /* 추가 */
+}
+
+button[value="5"] {
+  order: 7; /* 추가 */
+}
+
+button[value="6"] {
+  order: 8; /* 추가 */
+}
+
+button[value="+"] {
+  order: 13; /* 추가 */
+}
+
+button[value="1"] {
+  order: 9; /* 추가 */
+}
+
+button[value="2"] {
+  order: 10; /* 추가 */
+}
+
+button[value="3"] {
+  order: 11; /* 추가 */
+}
+
+button[value="="] {
+  order: 14; /* 추가 */
+}
+
+button[value="0"] {
+  order: 15; /* 추가 */
+}
+
+button[value="."] {
+  order: 16; /* 추가 */
 }
