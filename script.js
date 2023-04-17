@@ -1,31 +1,25 @@
-let input = document.getElementById('result');
+var num1 = '';
+var num2 = '';
+var operator = '';
+var result = '';
 
-function insertNumber(number) {
-	input.value += number;
+function display(num) {
+  if (result != '') {
+    clearResult();
+  }
+  if (operator == '') {
+    num1 += num;
+    document.getElementsByName('result')[0].value = num1;
+  } else {
+    num2 += num;
+    document.getElementsByName('result')[0].value = num2;
+  }
 }
 
-function insertOperator(operator) {
-	input.value += operator;
-}
-
-function insertDecimal() {
-	if (input.value.indexOf('.') === -1) {
-		input.value += '.';
-	}
-}
-
-function clearScreen() {
-	input.value = '';
-}
-
-function backspace() {
-	input.value = input.value.slice(0, -1);
-}
-
-function calculate() {
-	try {
-		input.value = eval(input.value);
-	} catch (error) {
-		input.value = 'Error';
-	}
-}
+function calculate(op) {
+  if (op == '=') {
+    if (num2 == '') {
+      result = num1;
+    } else {
+      result = eval(num1 + operator + num2);
+    }
