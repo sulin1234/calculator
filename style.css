@@ -1,102 +1,34 @@
-.calculator {
-  background-color: #FFFFE0;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px #CCCCCC;
-  display: inline-block;
-  font-family: Arial, sans-serif;
-  padding: 10px;
-  text-align: center; /* 추가 */
+.operator {
+  background-color: #f2a007;
+  color: #fff;
 }
 
-button {
-  background-color: #FFFFCC;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  color: #333333;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 5px;
-  padding: 10px;
-  width: 40px;
-  order: 1; /* 추가 */
+#equals {
+  background-color: #51b141;
+  color: #fff;
+  grid-column: span 2;
 }
 
-input {
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  font-size: 24px;
-  margin: 5px;
-  padding: 10px;
-  text-align: right;
-  width: 170px;
-  order: 0; /* 추가 */
+#clear {
+  background-color: #eb4034;
+  color: #fff;
 }
 
-button[value="C"] {
-  order: 2; /* 추가 */
+#decimal {
+  background-color: #ccc;
 }
 
-button[value="/"] {
-  order: 10; /* 추가 */
+button:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
 
-button[value="*"] {
-  order: 11; /* 추가 */
+button:focus {
+  outline: none;
 }
 
-button[value="7"] {
-  order: 3; /* 추가 */
-}
-
-button[value="8"] {
-  order: 4; /* 추가 */
-}
-
-button[value="9"] {
-  order: 5; /* 추가 */
-}
-
-button[value="-"] {
-  order: 12; /* 추가 */
-}
-
-button[value="4"] {
-  order: 6; /* 추가 */
-}
-
-button[value="5"] {
-  order: 7; /* 추가 */
-}
-
-button[value="6"] {
-  order: 8; /* 추가 */
-}
-
-button[value="+"] {
-  order: 13; /* 추가 */
-}
-
-button[value="1"] {
-  order: 9; /* 추가 */
-}
-
-button[value="2"] {
-  order: 10; /* 추가 */
-}
-
-button[value="3"] {
-  order: 11; /* 추가 */
-}
-
-button[value="="] {
-  order: 14; /* 추가 */
-}
-
-button[value="0"] {
-  order: 15; /* 추가 */
-}
-
-button[value="."] {
-  order: 16; /* 추가 */
+#output {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
 }
